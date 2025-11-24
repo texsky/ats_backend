@@ -8,9 +8,7 @@ from collections import Counter
 app = FastAPI()
 
 # Allow React frontend to call this API
-origins = [
-    "http://localhost:3000",  # React dev server
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
