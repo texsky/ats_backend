@@ -8,7 +8,7 @@ from collections import Counter
 app = FastAPI()
 
 # Allow React frontend to call this API
-origins = ["*"]
+origins = ["https://ats-resume-sandy.vercel.app/"]
 
 app.add_middleware(
     CORSMiddleware,
